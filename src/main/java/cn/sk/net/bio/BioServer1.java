@@ -36,7 +36,6 @@ public class BioServer1 implements Runnable{
         System.out.println("====bio服务端启动成功=====");
         System.out.println("====等待客户端连接=====");
         while (true){
-
             Socket socket = serverSocket.accept();
             BioServer1 bioDemo1 = new BioServer1(socket);
             new Thread(bioDemo1).start();
