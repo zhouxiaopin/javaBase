@@ -16,7 +16,6 @@ import java.net.URI;
  */
 public class TestHttpServerHandler extends SimpleChannelInboundHandler<HttpObject> {
 
-
     //channelRead0 读取客户端数据
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, HttpObject msg) throws Exception {
